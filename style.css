@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+}
+
+
+/* Navigation */
+
+nav {
+    background: #1f4e79;
+    padding: 18px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+
+/* Registration form */
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1f4e79;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+button {
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #1f4e79;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.container button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+/* Messages */
+
+#message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+
+/* View page */
+
+.table-container {
+    width: 95%;
+
+    margin: 40px auto;
+}
+
+.filter-box {
+    background: white;
+
+    padding: 20px;
+
+    margin-bottom: 25px;
+
+    border-radius: 8px;
+}
+
+.filter-box label {
+    display: inline-block;
+
+    margin-right: 10px;
+}
+
+.filter-box select {
+    width: 200px;
+
+    margin-right: 10px;
+}
+
+.filter-box button {
+    margin-right: 5px;
+}
+
+#resetButton {
+    background: #777;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+}
+
+th {
+    background: #1f4e79;
+
+    color: white;
+}
+
+th,
+td {
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 900px;
+    }
+
+}

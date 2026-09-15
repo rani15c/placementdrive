@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>View Registrations</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        Placement Drive System
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">
+            Register
+        </a>
+
+        <a href="view.html">
+            View Registrations
+        </a>
+
+    </div>
+
+</nav>
+
+
+<div class="table-container">
+
+    <h1>Registered Students</h1>
+
+
+    <div class="filter-box">
+
+        <label>
+            Filter by Company
+        </label>
+
+        <select id="companyFilter">
+
+            <option value="">
+                All Companies
+            </option>
+
+            <option value="TCS">
+                TCS
+            </option>
+
+            <option value="Infosys">
+                Infosys
+            </option>
+
+            <option value="Wipro">
+                Wipro
+            </option>
+
+            <option value="Accenture">
+                Accenture
+            </option>
+
+            <option value="Microsoft">
+                Microsoft
+            </option>
+
+        </select>
+
+
+        <button id="filterButton">
+            Filter
+        </button>
+
+        <button id="resetButton">
+            Reset
+        </button>
+
+    </div>
+
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Student Name</th>
+
+                <th>Roll No</th>
+
+                <th>Email</th>
+
+                <th>Branch</th>
+
+                <th>Year</th>
+
+                <th>Company</th>
+
+                <th>Date</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody id="registrationTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<script src="view.js"></script>
+
+</body>
+
+</html>
