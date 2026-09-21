@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Placement Drive Registration</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
 <nav>
-
-    <div class="logo">
-        Placement Drive System
-    </div>
+    <div class="logo">Placement Drive System</div>
 
     <div class="nav-links">
-
-        <a href="index.html">
-            Register
-        </a>
-
-        <a href="view.html">
-            View Registrations
-        </a>
-
+        <a href="index.php">Register</a>
+        <a href="view.php">View Registrations</a>
     </div>
-
 </nav>
-
 
 <div class="container">
 
@@ -45,11 +28,10 @@
         Register for upcoming company placement drives
     </p>
 
+    <form id="registrationForm">
 
-    <form id="registrationForm" onsubmit="showData(event)">
-        <label>
-            Student Name
-        </label>
+        <!-- Student Name -->
+        <label for="student_name">Student Name</label>
 
         <input
             type="text"
@@ -61,9 +43,8 @@
         >
 
 
-        <label>
-            Roll Number
-        </label>
+        <!-- Roll Number -->
+        <label for="roll_number">Roll Number</label>
 
         <input
             type="text"
@@ -75,9 +56,8 @@
         >
 
 
-        <label>
-            Email
-        </label>
+        <!-- Email -->
+        <label for="email">Email</label>
 
         <input
             type="email"
@@ -88,19 +68,15 @@
         >
 
 
-        <label>
-            Branch
-        </label>
+        <!-- Branch -->
+        <label for="branch">Branch</label>
 
         <select
             id="branch"
             name="branch"
             required
         >
-
-            <option value="">
-                Select Branch
-            </option>
+            <option value="">Select Branch</option>
 
             <option value="Computer Science">
                 Computer Science
@@ -121,23 +97,18 @@
             <option value="Mechanical">
                 Mechanical
             </option>
-
         </select>
 
 
-        <label>
-            Year
-        </label>
+        <!-- Year -->
+        <label for="year">Year</label>
 
         <select
             id="year"
             name="year"
             required
         >
-
-            <option value="">
-                Select Year
-            </option>
+            <option value="">Select Year</option>
 
             <option value="2nd Year">
                 2nd Year
@@ -150,23 +121,18 @@
             <option value="4th Year">
                 4th Year
             </option>
-
         </select>
 
 
-        <label>
-            Company
-        </label>
+        <!-- Company -->
+        <label for="company">Company</label>
 
         <select
             id="company"
             name="company"
             required
         >
-
-            <option value="">
-                Select Company
-            </option>
+            <option value="">Select Company</option>
 
             <option value="TCS">
                 TCS
@@ -187,11 +153,11 @@
             <option value="Microsoft">
                 Microsoft
             </option>
-
         </select>
 
 
-        <label>
+        <!-- Registration Date -->
+        <label for="registration_date">
             Registration Date
         </label>
 
@@ -203,6 +169,7 @@
         >
 
 
+        <!-- Submit -->
         <button type="submit">
             Register for Drive
         </button>
@@ -210,28 +177,13 @@
     </form>
 
 
+    <!-- Message -->
     <p id="message"></p>
 
 </div>
 
-<script>
-function showData(event) {
-    event.preventDefault();
 
-    const form = document.getElementById("registrationForm");
-    const data = new FormData(form);
-
-    let output = "";
-
-    for (const [key, value] of data.entries()) {
-        output += key + " = " + value + "\n";
-    }
-
-    alert(output);
-}
-</script>
-<!-- <script src="script.js"></script> -->
+<script src="script.js"></script>
 
 </body>
-
 </html>

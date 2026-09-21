@@ -18,7 +18,7 @@ async function loadRegistrations() {
 
         const response =
             await fetch(
-                "http://localhost:5000/registrations"
+                "registrations.php"
             );
 
         const data =
@@ -118,7 +118,7 @@ async function filterRegistrations() {
 
         const response =
             await fetch(
-                "http://localhost:5000/registrations/company/"
+                "registrations.php?company="
                 + encodeURIComponent(company)
             );
 

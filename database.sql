@@ -1,6 +1,3 @@
-CREATE DATABASE placement_drive;
-
-USE placement_drive;
 
 CREATE TABLE registrations (
     id INT AUTO_INCREMENT PRIMARY KEY,
